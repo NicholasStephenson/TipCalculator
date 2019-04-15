@@ -1,0 +1,16 @@
+{
+  "name": "tip_calculator",
+  "version": "1.0.0",
+  "description": "Calculate Tips!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Nicholas Stephenson",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}

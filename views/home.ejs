@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Sacramento" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <div class="container" id="calculator">
+        <div class="row">
+            <div class="col-md-7 col-lg-6 mx-auto">
+                <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+                    <div id="container">
+                        
+                        <h1 id="title" class="text-center">Tip Calculator</h1>
+                        <hr>
+                    <div>
+                        
+                    <label >Total Bill</label>
+                    <input id="billTotal" type="number" placeholder="enter your total bill">
+                    </div>
+                    <div>
+                        <label>Tip</label>
+                        <input class="slider" max="30" id="tipInput" type="range" value="0">
+                        <span class="text-center" id="tipOutput"></span>
+                    </div>
+                    <div>
+                        <label>Split (number of people)</label>
+                        <input class="slider" id="splitInput" min="1" max="10" type="range" value="1">
+                        <span class="text-center" id="splitOutput"></span>
+                    </div>
+                    <hr>
+                    <div>
+                        <div>
+                          <label>New Bill (per person)</label>
+                            <div class="text-center">
+                                <span id="newBill"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <label>Tip Amount (per person)</label>
+                                <div class="text-center">
+                                    <span class="text-center" id="tipEach"></span>
+                                </div>
+                        </div>
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="text-center footer">
+    <p>Made by Nicholas Stephenson</p>
+</div>
+
+<script src="/TipCalc.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
